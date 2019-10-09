@@ -1,59 +1,197 @@
-// Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+// /* HTML5 display-role reset for older browsers */
+// article, aside, details, figcaption, figure, 
+// footer, header, hgroup, menu, nav, section {
+// 	display: block;
+// }
+// body {
+// 	line-height: 1;
+// }
+// ol, ul {
+// 	list-style: none;
+// }
+// blockquote, q {
+// 	quotes: none;
+// }
+// blockquote:before, blockquote:after,
+// q:before, q:after {
+// 	content: '';
+// 	content: none;
+// }
+// table {
+// 	border-collapse: collapse;
+// 	border-spacing: 0;
+// }
 
 /* Set every element's box-sizing to border-box */
+
+@purp:#6037bf;
+
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	// border:1px solid purple;
+}
+html, {
+	height: 100%;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 62.5%;
+	background-color:#1d1d1d;
 }
 
-html, body {
-    height: 100%;
+body {
+	line-height: 1.25;
+	margin: 0 auto;
+	width: 900px;
+	background-color:#2d2d2d;
+	background-image: url(/images/starsbg.jpg);
+	background-repeat:	no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+	border-top: 10px solid #141414; 
+	border-left: 10px solid #141414;
 }
 
+.navwrapper{
+	position: sticky;
+	overflow: hidden;
+	top: 0;
+	z-index: 1337;
+}
+nav {
+	display: flex;
+	width: 100%;
+	text-align: center;
+	justify-content: space-around;
+	align-items: flex-end;
+	font-size: 1.8rem;
+	margin: 1%;
+	a{
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		transition:all 0.6s;
+	}//closes a
+	a:hover{
+		color:@purp;
+	}//closes hover
+}//closes nav
+
+a {
+	text-decoration: none;
+	color: darkmagenta;
+	a:hover {
+		color:@purp;
+	}//closes hover
+}//closes a
+
+header {
+	display: flex;
+	// border:1px solid red;
+	flex-wrap: nowrap;
+	width: 100%;
+
+	// padding: 300px 0 0 0;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+.spacer{
+	// border:1px solid orange;
+	height: 20rem;
+}
+#name {
+	margin: 10 0 0 0;
+	font-size: 4rem;
+	color: whitesmoke;
+}
+#nametitle {
+	font-size: 2rem;
+	color: @purp;
+}
+h3 {
+	font-size: 1.8rem;
+}
+.headeritem {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	// border:1px solid red;
+}
+.icons {
+	display: flex;
+	width: 20%;
+	margin: 0 auto;
+	padding: 2rem 0 4rem 0;
+	font-size: 2.2rem;
+	color: whitesmoke;
+	border-radius: 5px;
+	justify-content: center;
+	justify-content: space-between;
+	a {
+		color:whitesmoke;
+	}//close a
+}//closes icons
+
+.about {
+	display: flex;
+	width: 95%;
+	margin: 0 auto;
+	font-size: 1.6rem;
+	color: whitesmoke;
+	border-radius: 10px;
+	border-top: 1px solid grey;
+}
+.services {
+	display: flex;
+	width: 95%;
+	margin: 2rem auto;
+	border-radius: 10px;
+	border-top: 1px solid grey;
+}
+.service-item{
+	display: flex;
+	width: 49%;
+	margin: 0 auto;
+	padding: 0 .5rem;
+	font-size: 1.6rem;
+	color: whitesmoke;
+// 	border-radius: 10px;
+// 	border: 1px solid grey;
+}
+#divider{
+	border-left: 1px solid grey;
+	margin: 1rem;
+}
+.button {
+	border: 1px solid grey;
+	border-radius: 5%;
+	color: @purp;
+	width: 15%;
+	margin-left: 10px;
+	padding: 10px;
+	text-align: center;
+	a{
+		color:@purp;
+	}
+	a:hover{
+		color:whitesmoke;
+	}
+}
+.experience {
+	display: flex;
+	width: 95%;
+	margin: 2rem auto;
+	border-radius: 10px;
+	border-top: 1px solid grey;
+	color: whitesmoke;
+	div {
+		font-size: 1.6rem;
+	}
+}
+
+footer{
+	text-align: center;
+	font-size: 1.25rem;
+	color:@purp;
+}
