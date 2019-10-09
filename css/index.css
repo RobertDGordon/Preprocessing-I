@@ -93,6 +93,9 @@ h3 {
 .icons a {
   color: whitesmoke;
 }
+.icons a:hover {
+  color: #6037bf;
+}
 .about {
   display: flex;
   width: 95%;
@@ -149,6 +152,6 @@ h3 {
 }
 footer {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: #6037bf;
 }
