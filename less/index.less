@@ -27,6 +27,14 @@
 
 @purp:#6037bf;
 
+.bordertops (){
+	border-radius: 10px;
+	border-top: 1px solid grey;
+}
+.flexin (){
+	display:flex;
+}
+
 * {
 	box-sizing: border-box;
 	// border:1px solid purple;
@@ -58,7 +66,7 @@ body {
 	z-index: 1337;
 }
 nav {
-	display: flex;
+	.flexin;
 	width: 100%;
 	text-align: center;
 	justify-content: space-around;
@@ -85,7 +93,7 @@ a {
 }//closes a
 
 header {
-	display: flex;
+	.flexin();
 	// border:1px solid red;
 	flex-wrap: nowrap;
 	width: 100%;
@@ -97,8 +105,7 @@ header {
 
 }
 .spacer{
-	// border:1px solid orange;
-	height: 20rem;
+	height: 22rem;
 }
 #name {
 	margin: 10 0 0 0;
@@ -119,7 +126,7 @@ h3 {
 	// border:1px solid red;
 }
 .icons {
-	display: flex;
+	.flexin();
 	width: 20%;
 	margin: 0 auto;
 	padding: 2rem 0 4rem 0;
@@ -137,23 +144,21 @@ h3 {
 }//closes icons
 
 .about {
-	display: flex;
+	.flexin();
 	width: 95%;
 	margin: 0 auto;
 	font-size: 1.6rem;
 	color: whitesmoke;
-	border-radius: 10px;
-	border-top: 1px solid grey;
+	.bordertops();
 }
 .services {
-	display: flex;
+	.flexin();
 	width: 95%;
 	margin: 2rem auto;
-	border-radius: 10px;
-	border-top: 1px solid grey;
+	.bordertops ();
 }
 .service-item{
-	display: flex;
+	.flexin();
 	width: 49%;
 	margin: 0 auto;
 	padding: 0 .5rem;
@@ -182,11 +187,10 @@ h3 {
 	}
 }
 .experience {
-	display: flex;
+	.flexin();
 	width: 95%;
 	margin: 2rem auto;
-	border-radius: 10px;
-	border-top: 1px solid grey;
+	.bordertops();
 	color: whitesmoke;
 	div {
 		font-size: 1.6rem;
